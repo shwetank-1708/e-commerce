@@ -29,6 +29,9 @@ const Navbar = () => {
         <NavLink to="/contact">
           <p>Contact Us</p>
         </NavLink>
+        <NavLink to="/contact">
+          <p>Contact Us</p>
+        </NavLink>
       </div>
 
       <div className="flex items-center gap-2">
