@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { FaSearch } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
+import { FaRegHeart } from "react-icons/fa";
+import { LuShoppingCart } from "react-icons/lu";
 
 const Navbar = () => {
   return (
@@ -10,7 +12,7 @@ const Navbar = () => {
         <img src={logo} className="w-[70px]" />
       </div>
 
-      <div className="flex gap-2 font-bold">
+      <div className="flex gap-4 font-bold">
         <NavLink to="/">
           <p>Home</p>
         </NavLink>
@@ -29,9 +31,6 @@ const Navbar = () => {
         <NavLink to="/contact">
           <p>Contact Us</p>
         </NavLink>
-        <NavLink to="/contact">
-          <p>Contact Us</p>
-        </NavLink>
       </div>
 
       <div className="flex items-center gap-2">
@@ -42,6 +41,8 @@ const Navbar = () => {
         />
         <FaSearch className="text-xl" />
         <CgProfile className="text-xl" />
+        <FaRegHeart className="text-xl" />
+        <LuShoppingCart className="text-xl" />
       </div>
     </div>
   );
