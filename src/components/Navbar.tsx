@@ -7,29 +7,29 @@ import { LuShoppingCart } from "react-icons/lu";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-around">
+    <div className="flex items-center justify-around p-4 text-lg">
       <div>
         <img src={logo} className="w-[70px]" />
       </div>
 
       <div className="flex gap-4 font-bold">
         <NavLink to="/">
-          <p>Home</p>
+          <p className="hover:text-gray-600">Home</p>
         </NavLink>
         <NavLink to="/men">
-          <p>Men</p>
+          <p className="hover:text-gray-600">Men</p>
         </NavLink>
         <NavLink to="/women">
-          <p>Women</p>
+          <p className="hover:text-gray-600">Women</p>
         </NavLink>
         <NavLink to="/kids">
-          <p>Kids</p>
+          <p className="hover:text-gray-600">Kids</p>
         </NavLink>
         <NavLink to="/about">
-          <p>About Us</p>
+          <p className="hover:text-gray-600">About Us</p>
         </NavLink>
         <NavLink to="/contact">
-          <p>Contact Us</p>
+          <p className="hover:text-gray-600">Contact Us</p>
         </NavLink>
       </div>
 
