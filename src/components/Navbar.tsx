@@ -12,7 +12,7 @@ const Navbar = () => {
         <img src={logo} className="w-[70px]" />
       </div>
 
-      <div className="flex gap-4 font-bold">
+      <div className="flex gap-4 font-bold text-gray-500">
         <NavLink to="/">
           <p className="hover:text-gray-600">Home</p>
         </NavLink>
@@ -33,16 +33,30 @@ const Navbar = () => {
         </NavLink>
       </div>
 
-      <div className="flex items-center gap-2">
-        <input
-          type="text"
-          placeholder="Search Here"
-          className="border-2 rounded-lg"
-        />
-        <FaSearch className="text-xl" />
-        <CgProfile className="text-xl" />
-        <FaRegHeart className="text-xl" />
-        <LuShoppingCart className="text-xl" />
+      <div className="flex items-center gap-2 text-gray-500">
+        <div className="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+          <FaSearch className="text-xl cursor-pointer" />
+          <input
+            type="text"
+            placeholder="Search Here"
+            className="border-none bg-gray-200 focus:outline-none"
+          />
+        </div>
+
+        <NavLink to="/login">
+          {" "}
+          <CgProfile className="text-xl" />
+        </NavLink>
+
+        <NavLink to="/wishlist">
+          {" "}
+          <FaRegHeart className="text-xl" />
+        </NavLink>
+
+        <NavLink to="/cart">
+          {" "}
+          <LuShoppingCart className="text-xl" />
+        </NavLink>
       </div>
     </div>
   );
