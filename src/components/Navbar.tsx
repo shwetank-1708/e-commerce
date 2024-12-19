@@ -43,10 +43,30 @@ const Navbar = () => {
           />
         </div>
 
-        <NavLink to="/login">
-          {" "}
-          <CgProfile className="text-xl" />
-        </NavLink>
+        <div className="group relative py-2">
+          <div className="cursor-pointer">
+            <CgProfile className="text-xl" />
+          </div>
+
+          <div>
+            <div className="group-hover:block hidden absolute dropdown-menu right-[-60px] mt-2 w-[150px]">
+              <div className="flex flex-col bg-gray-300 p-2 rounded-md">
+                <NavLink
+                  className="hover:text-black cursor-pointer"
+                  to="/login"
+                >
+                  Login
+                </NavLink>
+                <NavLink
+                  className="hover:text-black cursor-pointer"
+                  to="/signup"
+                >
+                  Sign Up
+                </NavLink>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <NavLink to="/wishlist">
           {" "}
