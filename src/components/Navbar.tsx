@@ -9,7 +9,7 @@ import { TiThMenu } from "react-icons/ti";
 import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
-  const [user, setUser] = useState<boolean>(false);
+  const user = false;
   const [visible, setVisible] = useState<boolean>(false);
 
   return (
